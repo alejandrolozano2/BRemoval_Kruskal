@@ -10,7 +10,7 @@
 
 #define diff(x,y)   (x-y)
 #define sqr(d) (d*d)
-#define bgrDiff(x, y)  (abs(diff(x[0], y[0])) + abs(diff(x[1], y[1])) + abs(diff(x[2], y[2])))
+#define bgrDiff(x, y)  (abs(diff((x)->red, (y)->red)) + abs(diff((x)->green, (y)->green)) + abs(diff((x)->blue, (y)->blue)))
 
 
 struct RGB {
@@ -21,6 +21,8 @@ struct RGB {
 
 /*Onw implementation for gray conversion*/
 int bgr2grey (cv::Mat & src, cv::Mat & dst);
+
+void buildEdges(cv::Mat & image, uint32_t (* e)[3], uint32_t radius);
 
 #endif
 

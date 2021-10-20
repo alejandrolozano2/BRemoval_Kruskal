@@ -17,6 +17,6 @@ uint32_t findLeader(uint32_t * parents, uint32_t size, uint32_t value);
 bool join(uint32_t * parents, uint32_t * rank, uint32_t size, uint32_t i, uint32_t j);
 
 /*MST Kruskal i,j,w*/
-void kruskal(uint32_t  (& edges)[10][3], uint32_t size);
+void kruskal(uint32_t  (* edges)[3], uint32_t size);
 
 #endif

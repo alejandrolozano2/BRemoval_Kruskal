@@ -1,7 +1,7 @@
 #include "sorting.h"
 
 /*Use count sorting method for edges (i,j,w)*/
-void sort_edges( uint32_t (*es)[3], uint32_t (*ed)[3], uint32_t size, uint32_t maxVal ) { 
+void sortEdges( uint32_t (*es)[3], uint32_t (*ed)[3], uint32_t size, uint32_t maxVal ) { 
     #define WINDEX 2
 
     uint32_t  count[maxVal + 1] = {};
@@ -25,7 +25,7 @@ void sort_edges( uint32_t (*es)[3], uint32_t (*ed)[3], uint32_t size, uint32_t m
 
 /*Sort Count */
 
-void count_sort(uint32_t * source, uint32_t * destination, uint32_t size, uint32_t maxValue) {
+void countSort(uint32_t * source, uint32_t * destination, uint32_t size, uint32_t maxValue) {
 
     uint32_t  count[maxValue + 1] = {};
 
