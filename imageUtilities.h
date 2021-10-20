@@ -6,6 +6,11 @@
 #include<opencv/cv.h>
 #include<opencv2/imgproc/imgproc.hpp>
 #include<opencv2/highgui/highgui.hpp>
+#include<cstdlib>
+
+#define diff(x,y)   (x-y)
+#define sqr(d) (d*d)
+#define bgrDiff(x, y)  (abs(diff(x[0], y[0])) + abs(diff(x[1], y[1])) + abs(diff(x[2], y[2])))
 
 
 struct RGB {
