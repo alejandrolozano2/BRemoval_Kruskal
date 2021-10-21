@@ -22,7 +22,7 @@ struct RGB {
 /*Onw implementation for gray conversion*/
 int bgr2grey (cv::Mat & src, cv::Mat & dst);
 
-void buildEdges(cv::Mat & image, uint32_t (* e)[3], uint32_t radius);
+uint32_t buildEdges(cv::Mat & image, uint32_t (* e)[3], uint32_t radius);
 
 #endif
 
