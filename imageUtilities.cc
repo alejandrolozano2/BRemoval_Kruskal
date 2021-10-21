@@ -28,7 +28,7 @@ uint32_t buildEdges(cv::Mat & image, uint32_t (* e)[3], uint32_t radius) {
 
         for ( int r = 0; r < s.height; r++) {          
                 for (int c = 0; c < s.width; c++) {
-                        j = r * s.height + c;
+                        j = r * s.width + c;
                         if (c < s.width - 1 ) {
                                 diff = bgrDiff(p, p + 1);            //Get difference with the pixel on the right
                                 e[i][2] = diff;
