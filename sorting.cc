@@ -55,9 +55,8 @@ void printArray(uint32_t * arr, uint32_t size) {
 void printEdgeArray(uint32_t (*es)[3], uint32_t size) {
 
     for ( int  i = 0; i < size; i++) 
-        std::cout << es[i][0] << " " << es[i][1] << " " << es[i][2] << " ";
+        std::cout << es[i][0] << " " << es[i][1] << " " << es[i][2] << " " << std::endl;
     
-    std::cout << std::endl;
 }
 
 
