@@ -59,7 +59,6 @@ int main(int argc, char * argv[]) {
                 initParentsAndRanks(parents, ranks, imageSize);
                 auto max = buildEdges(colorMat, (uint32_t(*)[3])edges, 0);
                 sortEdges((uint32_t(*)[3])edges, (uint32_t(*)[3])sortedEdges, nEdges, max);
-                //printEdgeArray(sortedEdges, imageSize * 2 - (s.width + s.height));
                 mergedCount = kruskal((uint32_t(*)[3])sortedEdges, nEdges, imageSize, parents, ranks, threshold);
                 maxLeader = getMaxParent(ranks, imageSize);
                 RGB * p = colorMat.ptr<RGB>(0);
